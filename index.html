@@ -2,10 +2,270 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8" />
-  <title>心情溫度計</title>
+  <title>115年度 15-45歲青壯世代心理健康支持方案 - 伯特利敦南身心診所</title>
   <link rel="stylesheet" href="style.css" />
+
+<style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Custom Radio Button Styling */
+        .radio-label input:checked + div {
+            background-color: #5F9EA0;
+            color: white;
+            border-color: #5F9EA0;
+        }
+        
+        /* Modal Animation */
+        .modal {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .modal-content {
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+        .modal.active .modal-content {
+            transform: scale(1);
+        }
+        /* Custom Bullet Points */
+        ul.custom-bullets li {
+            position: relative;
+            padding-left: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        ul.custom-bullets li::before {
+            content: "•";
+            color: #5F9EA0;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            width: 1em;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5F9EA0',     /* Cadet Blue */
+                        secondary: '#F0F7F7',   /* Very Light Cyan */
+                        accent: '#FF7F50',      /* Coral */
+                        textMain: '#2D3748',
+                        textLight: '#718096',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
+<body class="bg-gray-50 text-textMain antialiased pb-12">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex justify-center items-center">
+            <div class="font-bold text-xl text-primary flex items-center gap-3">
+                <img src="診所LOGO_0.jpg" alt="Logo" class="h-10 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <i class="ph ph-plant text-2xl hidden"></i>
+                <span class="text-gray-800">伯特利身心診所</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-secondary pt-12 pb-16 px-4 text-center">
+        <div class="max-w-3xl mx-auto section-fade-in" style="animation-delay: 0.1s;">
+            <div class="inline-block py-2 px-4 rounded-lg bg-primary/10 mb-6">
+                <span class="text-primary text-xl md:text-2xl font-bold tracking-wide">
+                    115年度 15-45歲青壯世代心理健康支持方案
+                </span>
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight text-gray-800">
+                給自己一段時間，練習與內心對話
+            </h1>
+            <p class="text-textLight text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
+                心理諮商不僅是處理情緒的急救站，更是認識自我的長途旅程。
+                <br>伯特利在這裡，陪你一起透過諮商梳理生活。
+            </p>
+        </div>
+    </header>
+
+    <!-- Scheme Details & Rules Section -->
+    <section class="py-12 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="border-l-4 border-primary pl-6 mb-8 section-fade-in">
+                <h2 class="text-2xl font-bold text-gray-800">補助資格與方案規範</h2>
+                <p class="text-gray-500 mt-1">為了確保您的權益，請詳閱以下資訊</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 section-fade-in" style="animation-delay: 0.2s;">
+                <!-- Card 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                    <h3 class="font-bold text-lg mb-4 flex items-center gap-2 text-primary">
+                        <i class="ph ph-user-check"></i> 資格與費用
+                    </h3>
+                    <ul class="text-sm text-gray-600 space-y-3 custom-bullets">
+                        <li><strong>補助對象：</strong>年滿 15 歲且未滿 46 歲，持有健保身分之民眾。</li>
+                        <li><strong>方案期間：</strong>115/01/01 ~ 115/12/31。</li>
+                        <li><strong>補助額度：</strong>每人至多使用 3 次，每次諮商時間滿 40 分鐘。</li>
+                        <li class="bg-yellow-50 p-2 rounded text-yellow-800 font-medium"><strong>費用說明：</strong>第一次諮商時，酌收掛號費 600 元。</li>
+                        <li><strong>核對證件：</strong>每一次諮商皆須提供證件核對身分。</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                    <h3 class="font-bold text-lg mb-4 flex items-center gap-2 text-primary">
+                        <i class="ph ph-warning-circle"></i> 重要限制
+                    </h3>
+                    <ul class="text-sm text-gray-600 space-y-3 custom-bullets">
+                        <li><strong>諮商間隔：</strong>2 次諮商間隔不得小於 7 天。<span style ="color:red;">建議每週一次，最長兩週一次。</span></li>
+                        <li><strong>通訊諮商：</strong>伯特利於此方案，<span class="text-red-500 font-bold">不開放</span>通訊諮商。</li>
+                        <li><strong>單一機構：</strong>為確保治療連續性，不建議同時在多處進行諮商。</li>
+                        <li class="text-red-600"><strong>失約規範：</strong>連續 2 次預約後無故未出席，將於第 2 次缺席日起 90 日內，暫停補助資格。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counseling Readiness Section -->
+    <section class="py-16 px-4 bg-secondary/50">
+        <div class="max-w-4xl mx-auto section-fade-in">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl font-bold mb-3">關於諮商準備度：我們如何開始？</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">
+                    對於諮商有一定程度的心理準備，能讓療程效果更顯著。
+                    <br>但請放心，伯特利是一個允許「尚未準備好」的空間。
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <!-- Ready -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-teal-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-teal-50 rounded-full blur-2xl"></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">如果您已經準備好了...</h3>
+                    <p class="text-sm text-gray-500 mb-6">這代表您可能已經思考過以下問題，這將有助於我們更快進入核心：</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="ph ph-check text-teal-500 mt-1"></i>
+                            <span>我清楚目前最大的困擾是什麼（例如：職場人際、伴侶溝通、情緒低落），並願意投入改變。</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ph ph-check text-teal-500 mt-1"></i>
+                            <span>我知道心理師不是直接給答案，而是一起探索與嘗試。</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ph ph-check text-teal-500 mt-1"></i>
+                            <span>即使生活忙碌，我仍願意為諮商預留時間。</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ph ph-check text-teal-500 mt-1"></i>
+                            <span>我願意嘗試開放自己，談論比較深層或脆弱的感受。</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 pt-6 border-t border-gray-100 text-teal-600 font-medium text-sm">
+                        ✨ 這樣的狀態，能讓 3 次的方案發揮最大的效益！
+                    </div>
+                </div>
+
+                <!-- Not Ready (Modified) -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-gray-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-gray-100 rounded-full blur-2xl"></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">如果您還沒準備好...</h3>
+                    <p class="text-sm text-gray-500 mb-6">也完全沒關係！「不知道該說什麼」本身就是一個很重要的起點。</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="ph ph-hand-heart text-gray-400 mt-1"></i>
+                            <div>
+                                <span>先透過專業的身心科醫師，針對目前的身心狀況進行整體性評估，視需要進行治療計畫。</span>
+                                <!-- ★ 新增：門診 LINE 連結 -->
+                                <a href="https://line.me/R/ti/p/@532imxhr" target="_blank" class="inline-flex items-center gap-1 text-[#00C300] font-bold hover:underline mt-1">
+                                    <i class="ph ph-chat-circle-dots"></i> 點此諮詢門診
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ph ph-hand-heart text-gray-400 mt-1"></i>
+                            <span>我們可以先從「為什麼感覺很亂」、「為什麼不想說話」開始談起。</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ph ph-hand-heart text-gray-400 mt-1"></i>
+                            <span>您可以利用這 3 次機會，僅僅是用來評估「我是否適合進行長期諮商」。</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 pt-6 border-t border-gray-100 text-gray-500 font-medium text-sm">
+                        🌱 我們不干預您的選擇，即使沒準備好，門依然為您敞開。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rights & Obligations Section -->
+    <section class="py-12 px-4 bg-white border-t border-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gray-50 rounded-xl p-8">
+                <h3 class="text-xl font-bold text-gray-800 mb-6 text-center">權利與義務說明</h3>
+                
+                <div class="space-y-8">
+                    <!-- Confidentiality -->
+                    <div>
+                        <h4 class="font-bold text-gray-700 mb-2 border-l-4 border-primary pl-3">一、保密與通報責任</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            您的晤談內容為保密資料，或者在取得您同意時，才會告知相關人士。但如果是屬於下列幾種特殊情況（如危及生命安全、涉及法律責任），將不在此限。
+                        </p>
+                    </div>
+
+                    <!-- Leave & Termination -->
+                    <div>
+                        <h4 class="font-bold text-gray-700 mb-2 border-l-4 border-primary pl-3">二、請假規範與聯絡方式</h4>
+                        
+                        <div class="mb-5">
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                若欲取消已預約之會談，請至少於<span class="text-red-500 font-medium">前一上班日下班 (20:30之前)</span> 告知診所。
+                            </p>
+                        </div>
+
+                        <!-- 聯絡資訊 -->
+                        <div class="bg-white border border-gray-200 rounded-lg px-6 py-4 flex flex-col md:flex-row justify-start gap-8 shadow-sm">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                    <i class="ph ph-phone text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-400 font-medium">診所專線</p>
+                                    <p class="text-gray-700 font-bold font-mono text-lg">02-2720-0938</p>
+                                </div>
+                            </div>
+                            <!-- 官方 LINE 加入連結 -->
+                            <a href="https://line.me/R/ti/p/@xcl2332g" target="_blank" class="flex items-center gap-3 group hover:bg-gray-50 transition rounded-lg p-2 -ml-2">
+                                <div class="w-10 h-10 rounded-full bg-[#00C300]/10 flex items-center justify-center text-[#00C300] group-hover:bg-[#00C300] group-hover:text-white transition">
+                                    <i class="ph ph-chat-circle-dots text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-400 font-medium group-hover:text-primary transition">官方 LINE ID (點擊加入)</p>
+                                    <p class="text-gray-700 font-bold font-mono text-lg group-hover:text-[#00C300] transition">@xcl2332g</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <div class="container">
   <h1>心情溫度計量表</h1>
@@ -82,3 +342,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
