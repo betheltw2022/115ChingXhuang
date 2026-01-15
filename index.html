@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>115年度 15-45歲青壯世代心理健康支持方案 - 伯特利身心診所</title>
+    <title>115年度 15-45歲青壯世代心理健康支持方案 - 伯特利敦南身心診所</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Phosphor Icons -->
@@ -83,9 +83,9 @@
     <nav class="bg-white shadow-sm sticky top-0 z-40">
         <div class="max-w-4xl mx-auto px-4 py-4 flex justify-center items-center">
             <div class="font-bold text-xl text-primary flex items-center gap-3">
-                <img src="診所LOGO_0.jpg" alt="Logo" class="h-10 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <img src="敦南logo.png" alt="Logo" class="h-10 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                 <i class="ph ph-plant text-2xl hidden"></i>
-                <span class="text-gray-800">伯特利身心診所</span>
+                <span class="text-gray-800">伯特利敦南身心診所</span>
             </div>
         </div>
     </nav>
@@ -155,7 +155,7 @@
                 <h2 class="text-2xl font-bold mb-3">關於諮商準備度：我們如何開始？</h2>
                 <p class="text-gray-500 max-w-2xl mx-auto">
                     對於諮商有一定程度的心理準備，能讓療程效果更顯著。
-                    <br>但請放心，伯特利是一個允許「尚未準備好」的空間。
+                    <br>但請放心，我們是一個允許「尚未準備好」的空間。
                 </p>
             </div>
 
@@ -199,7 +199,7 @@
                             <div>
                                 <span>先透過專業的身心科醫師，針對目前的身心狀況進行整體性評估，視需要進行治療計畫。</span>
                                 <!-- ★ 新增：門診 LINE 連結 -->
-                                <a href="https://line.me/R/ti/p/@532imxhr" target="_blank" class="inline-flex items-center gap-1 text-[#00C300] font-bold hover:underline mt-1">
+                                <a href="https://line.me/R/ti/p/@718plgpz" target="_blank" class="inline-flex items-center gap-1 text-[#00C300] font-bold hover:underline mt-1">
                                     <i class="ph ph-chat-circle-dots"></i> 點此諮詢門診
                                 </a>
                             </div>
@@ -258,7 +258,7 @@
                                 </div>
                             </div>
                             <!-- 官方 LINE 加入連結 -->
-                            <a href="https://line.me/R/ti/p/@xcl2332g" target="_blank" class="flex items-center gap-3 group hover:bg-gray-50 transition rounded-lg p-2 -ml-2">
+                            <a href="https://line.me/R/ti/p/@167splho" target="_blank" class="flex items-center gap-3 group hover:bg-gray-50 transition rounded-lg p-2 -ml-2">
                                 <div class="w-10 h-10 rounded-full bg-[#00C300]/10 flex items-center justify-center text-[#00C300] group-hover:bg-[#00C300] group-hover:text-white transition">
                                     <i class="ph ph-chat-circle-dots text-xl"></i>
                                 </div>
@@ -274,273 +274,78 @@
         </div>
     </section>
 
-    <!-- Assessment Form Section -->
-    <section id="assessment-form" class="py-16 px-4 bg-gray-50">
-        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div class="bg-gray-800 p-6 text-white text-center">
-                <h2 class="text-xl font-bold">身心狀況初步評估</h2>
-                <p class="text-sm text-gray-400 mt-1">為了協助您安排最合適的資源，請先協助我們完成此評估</p>
-            </div>
-            
-            <form id="assessmentForm" class="p-6 md:p-10 space-y-8">
-                <div id="bsrs-section">
-                    <p class="text-sm text-gray-500 mb-6 bg-blue-50 p-3 rounded">
-                        請圈選最近一星期以來（包括今天），您對下列問題感到困擾的程度。
-                    </p>
+   <div class="container">
+  <h1>心情溫度計量表</h1>
 
-                    <div class="space-y-6">
-                        <!-- Q1 -->
-                        <div class="question-block" data-qid="1">
-                            <p class="font-medium text-gray-800 mb-3">1. 感覺緊張不安</p>
-                            <div class="grid grid-cols-5 gap-2 text-center text-xs sm:text-sm">
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q1" value="0" class="hidden" required><div class="border rounded py-2 hover:bg-gray-50 transition">完全沒有<br>(0)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q1" value="1" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">輕微<br>(1)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q1" value="2" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">中等程度<br>(2)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q1" value="3" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">厲害<br>(3)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q1" value="4" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">非常厲害<br>(4)</div></label>
-                            </div>
-                        </div>
+  <!-- 🟢 這段說明文字你可以自行修改 -->
+  <p class="desc">
+    請依據您最近一週的感受，選擇最符合您狀況的選項。
+  </p>
 
-                        <!-- Q2 -->
-                        <div class="question-block" data-qid="2">
-                            <p class="font-medium text-gray-800 mb-3">2. 覺得容易苦惱或動怒</p>
-                            <div class="grid grid-cols-5 gap-2 text-center text-xs sm:text-sm">
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q2" value="0" class="hidden" required><div class="border rounded py-2 hover:bg-gray-50 transition">完全沒有<br>(0)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q2" value="1" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">輕微<br>(1)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q2" value="2" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">中等程度<br>(2)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q2" value="3" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">厲害<br>(3)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q2" value="4" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">非常厲害<br>(4)</div></label>
-                            </div>
-                        </div>
+  <form id="quizForm">
 
-                        <!-- Q3 -->
-                        <div class="question-block" data-qid="3">
-                            <p class="font-medium text-gray-800 mb-3">3. 感覺憂鬱、心情低落</p>
-                            <div class="grid grid-cols-5 gap-2 text-center text-xs sm:text-sm">
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q3" value="0" class="hidden" required><div class="border rounded py-2 hover:bg-gray-50 transition">完全沒有<br>(0)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q3" value="1" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">輕微<br>(1)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q3" value="2" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">中等程度<br>(2)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q3" value="3" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">厲害<br>(3)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q3" value="4" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">非常厲害<br>(4)</div></label>
-                            </div>
-                        </div>
-
-                        <!-- Q4 -->
-                        <div class="question-block" data-qid="4">
-                            <p class="font-medium text-gray-800 mb-3">4. 覺得比不上別人</p>
-                            <div class="grid grid-cols-5 gap-2 text-center text-xs sm:text-sm">
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q4" value="0" class="hidden" required><div class="border rounded py-2 hover:bg-gray-50 transition">完全沒有<br>(0)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q4" value="1" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">輕微<br>(1)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q4" value="2" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">中等程度<br>(2)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q4" value="3" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">厲害<br>(3)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q4" value="4" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">非常厲害<br>(4)</div></label>
-                            </div>
-                        </div>
-
-                        <!-- Q5 -->
-                        <div class="question-block" data-qid="5">
-                            <p class="font-medium text-gray-800 mb-3">5. 睡眠困難，譬如難以入睡、易醒或早醒</p>
-                            <div class="grid grid-cols-5 gap-2 text-center text-xs sm:text-sm">
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q5" value="0" class="hidden" required><div class="border rounded py-2 hover:bg-gray-50 transition">完全沒有<br>(0)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q5" value="1" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">輕微<br>(1)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q5" value="2" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">中等程度<br>(2)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q5" value="3" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">厲害<br>(3)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q5" value="4" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">非常厲害<br>(4)</div></label>
-                            </div>
-                        </div>
-
-                        <!-- Q6 Additional -->
-                        <div class="question-block mt-8 pt-6 border-t border-dashed border-gray-300" data-qid="6">
-                            <p class="font-medium text-red-700 mb-3">★ 附加題：有自殺的念頭</p>
-                            <div class="grid grid-cols-5 gap-2 text-center text-xs sm:text-sm">
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q6" value="0" class="hidden" required><div class="border rounded py-2 hover:bg-gray-50 transition">完全沒有<br>(0)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q6" value="1" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">輕微<br>(1)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q6" value="2" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">中等程度<br>(2)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q6" value="3" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">厲害<br>(3)</div></label>
-                                <label class="radio-label cursor-pointer"><input type="radio" name="q6" value="4" class="hidden"><div class="border rounded py-2 hover:bg-gray-50 transition">非常厲害<br>(4)</div></label>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="pt-6 text-center">
-                    <button type="submit" id="submitBtn" class="w-full bg-primary text-white font-bold text-lg py-4 rounded-xl shadow-lg hover:bg-teal-600 transition flex items-center justify-center gap-2">
-                        <span>提交評估</span>
-                        <i class="ph ph-check-circle"></i>
-                    </button>
-                    <p class="text-center text-xs text-gray-400 mt-4">
-                        點擊提交後，系統將依據您的狀況提供適合的建議。
-                    </p>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <!-- Medical Alert Modal (High Risk) -->
-    <div id="medicalAlertModal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black/60 opacity-0 invisible p-4">
-        <div class="modal-content bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden relative">
-            <div class="bg-red-50 p-6 border-b border-red-100 flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-600">
-                    <i class="ph ph-heartbeat text-2xl"></i>
-                </div>
-                <div>
-                    <h3 class="text-lg font-bold text-gray-800">身心狀況關懷</h3>
-                    <p class="text-xs text-red-500 font-medium">自我檢測說明</p>
-                </div>
-            </div>
-            <div class="p-6">
-                <p class="text-gray-600 mb-6 leading-relaxed">
-                    根據您填寫的量表，您近期的情緒困擾指數可能較高。
-                    <br><br>
-                    為了提供您更完整的支持，除了心理諮商外，我們也建議您可以同步考慮**身心科門診醫師的評估**，透過多元的醫療資源（如藥物輔助），有時能更有效地緩解當下的不適。
-                    <br><br>
-                    <span class="text-gray-500 text-sm">當然，這僅是提供您參考的資源，您依然可以依據自己的意願預約諮商。</span>
-                </p>
-                
-                <div class="space-y-3 mb-6">
-                    <a href="https://line.me/R/ti/p/@532imxhr" target="_blank" class="flex items-center justify-center gap-2 bg-white border border-[#00C300] text-[#00C300] hover:bg-[#00C300] hover:text-white font-bold py-3 px-4 rounded-lg transition w-full">
-                        <i class="ph ph-chat-circle-dots text-xl"></i>
-                        加入門診官方 LINE (醫師評估諮詢)
-                    </a>
-                    
-                    <!-- 注意：這裡連結到 booking_form.html，且會帶上分數參數 -->
-                    <a class='booking-link flex items-center justify-center gap-2 bg-primary hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg transition w-full shadow-md' href='/booking_form'>
-                        <i class="ph ph-pencil-simple-line text-xl"></i>
-                        我了解了，前往填寫諮商預約表單
-                    </a>
-                </div>
-
-                <div class="flex justify-end">
-                    <button class="close-modal text-gray-400 hover:text-gray-600 text-sm px-4 py-2">
-                        關閉視窗
-                    </button>
-                </div>
-            </div>
-        </div>
+    <!-- 第 1～5 題（加總） -->
+    <!-- 🟢 題目文字可自行修改 -->
+    <div class="question">
+      <p>1. 感到緊張、焦慮不安</p>
+      <label><input type="radio" name="q1" value="0" required> 0 完全沒有</label>
+      <label><input type="radio" name="q1" value="1"> 1 偶爾</label>
+      <label><input type="radio" name="q1" value="2"> 2 有時</label>
+      <label><input type="radio" name="q1" value="3"> 3 經常</label>
+      <label><input type="radio" name="q1" value="4"> 4 非常嚴重</label>
     </div>
 
-    <!-- Booking Link Modal (Low/Medium Risk) -->
-    <div id="bookingLinkModal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black/60 opacity-0 invisible p-4">
-        <div class="modal-content bg-white w-full max-w-md rounded-2xl shadow-2xl overflow-hidden relative">
-            <div class="bg-teal-50 p-6 border-b border-teal-100 flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-teal-600">
-                    <i class="ph ph-check text-2xl"></i>
-                </div>
-                <div>
-                    <h3 class="text-lg font-bold text-gray-800">評估完成</h3>
-                    <p class="text-xs text-teal-600 font-medium">感謝您的填寫</p>
-                </div>
-            </div>
-            <div class="p-6">
-                <p class="text-gray-600 mb-6 leading-relaxed">
-                    感謝您的耐心填寫。這是一個認識自己狀態很好的開始。
-                    <br><br>
-                    請點擊下方按鈕，填寫正式預約表單，我們將盡快為您安排諮商時間。
-                </p>
-                
-                <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 mb-6">
-                    <!-- 注意：這裡連結到 booking_form.html，且會帶上分數參數 -->
-                    <a class='booking-link flex items-center justify-center gap-2 bg-primary hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg transition w-full shadow-lg' href='/booking_form'>
-                        <i class="ph ph-pencil-simple-line text-xl"></i>
-                        前往填寫預約資料
-                    </a>
-                </div>
-
-                <div class="flex justify-end">
-                    <button class="close-modal text-gray-400 hover:text-gray-600 text-sm px-4 py-2">
-                        稍後再填
-                    </button>
-                </div>
-            </div>
-        </div>
+    <div class="question">
+      <p>2. 感到情緒低落、心情不好</p>
+      <label><input type="radio" name="q2" value="0" required> 0 完全沒有</label>
+      <label><input type="radio" name="q2" value="1"> 1 偶爾</label>
+      <label><input type="radio" name="q2" value="2"> 2 有時</label>
+      <label><input type="radio" name="q2" value="3"> 3 經常</label>
+      <label><input type="radio" name="q2" value="4"> 4 非常嚴重</label>
     </div>
 
-    <script>
-        // --- 1. Animation ---
-        document.addEventListener('DOMContentLoaded', () => {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, { threshold: 0.1 });
-            document.querySelectorAll('.section-fade-in').forEach(el => observer.observe(el));
-        });
+    <div class="question">
+      <p>3. 覺得容易煩躁或易怒</p>
+      <label><input type="radio" name="q3" value="0" required> 0 完全沒有</label>
+      <label><input type="radio" name="q3" value="1"> 1 偶爾</label>
+      <label><input type="radio" name="q3" value="2"> 2 有時</label>
+      <label><input type="radio" name="q3" value="3"> 3 經常</label>
+      <label><input type="radio" name="q3" value="4"> 4 非常嚴重</label>
+    </div>
 
-        // --- 2. BSRS-5 Logic ---
-        const form = document.getElementById('assessmentForm');
-        const modalHigh = document.getElementById('medicalAlertModal');
-        const modalLow = document.getElementById('bookingLinkModal');
-        
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Calculate Score
-            let sum1to5 = 0;
-            let scoreQ6 = 0;
+    <div class="question">
+      <p>4. 睡眠品質不佳</p>
+      <label><input type="radio" name="q4" value="0" required> 0 完全沒有</label>
+      <label><input type="radio" name="q4" value="1"> 1 偶爾</label>
+      <label><input type="radio" name="q4" value="2"> 2 有時</label>
+      <label><input type="radio" name="q4" value="3"> 3 經常</label>
+      <label><input type="radio" name="q4" value="4"> 4 非常嚴重</label>
+    </div>
 
-            // 抓取每個問題的答案，用於網址參數傳遞
-            const q1 = document.querySelector('input[name="q1"]:checked')?.value || 0;
-            const q2 = document.querySelector('input[name="q2"]:checked')?.value || 0;
-            const q3 = document.querySelector('input[name="q3"]:checked')?.value || 0;
-            const q4 = document.querySelector('input[name="q4"]:checked')?.value || 0;
-            const q5 = document.querySelector('input[name="q5"]:checked')?.value || 0;
-            const q6 = document.querySelector('input[name="q6"]:checked')?.value || 0;
+    <div class="question">
+      <p>5. 感到壓力大、難以放鬆</p>
+      <label><input type="radio" name="q5" value="0" required> 0 完全沒有</label>
+      <label><input type="radio" name="q5" value="1"> 1 偶爾</label>
+      <label><input type="radio" name="q5" value="2"> 2 有時</label>
+      <label><input type="radio" name="q5" value="3"> 3 經常</label>
+      <label><input type="radio" name="q5" value="4"> 4 非常嚴重</label>
+    </div>
 
-            // 計算總分
-            sum1to5 = parseInt(q1) + parseInt(q2) + parseInt(q3) + parseInt(q4) + parseInt(q5);
-            scoreQ6 = parseInt(q6);
+    <!-- 第 6 題（關鍵題） -->
+    <div class="question highlight">
+      <p>6. 是否曾出現傷害自己的念頭？</p>
+      <label><input type="radio" name="q6" value="0" required> 0 完全沒有</label>
+      <label><input type="radio" name="q6" value="1"> 1 偶爾</label>
+      <label><input type="radio" name="q6" value="2"> 2 有時</label>
+      <label><input type="radio" name="q6" value="3"> 3 經常</label>
+      <label><input type="radio" name="q6" value="4"> 4 非常嚴重</label>
+    </div>
 
-            // ★ 產生帶有參數的網址，指向 booking_form.html (小寫)
-            const targetUrl = `booking_form.html?q1=${q1}&q2=${q2}&q3=${q3}&q4=${q4}&q5=${q5}&q6=${q6}`;
+    <button type="submit">送出評估</button>
 
-            // 更新所有連結
-            document.querySelectorAll('.booking-link').forEach(link => {
-                link.href = targetUrl;
-            });
+  </form>
+</div>
 
-            // Logic: Top 5 > 15 OR Q6 > 2
-            const isHighRisk = (sum1to5 >= 15) || (scoreQ6 >= 2);
-
-            if (isHighRisk) {
-                showModal(modalHigh);
-            } else {
-                showModal(modalLow);
-            }
-        });
-
-        // Modal Helpers
-        function showModal(modalEl) {
-            modalEl.classList.remove('invisible', 'opacity-0');
-            modalEl.classList.add('active');
-        }
-
-        function closeModal(modalEl) {
-            modalEl.classList.remove('active');
-            setTimeout(() => {
-                modalEl.classList.add('invisible', 'opacity-0');
-            }, 300);
-        }
-
-        // Close handlers
-        document.querySelectorAll('.close-modal').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                const modal = e.target.closest('.modal');
-                closeModal(modal);
-            });
-        });
-
-        // Click outside to close
-        [modalHigh, modalLow].forEach(m => {
-            m.addEventListener('click', (e) => {
-                if (e.target === m) closeModal(m);
-            });
-        });
-
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
-
