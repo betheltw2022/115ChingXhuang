@@ -1,34 +1,27 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("assessmentForm");
+document.getElementById("assessmentForm").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); // 阻止表單真的送出
+  const scores = {
+    q1: Number(document.querySelector('input[name="q1"]:checked').value),
+    q2: Number(document.querySelector('input[name="q2"]:checked').value),
+    q3: Number(document.querySelector('input[name="q3"]:checked').value),
+    q4: Number(document.querySelector('input[name="q4"]:checked').value),
+    q5: Number(document.querySelector('input[name="q5"]:checked').value),
+    q6: Number(document.querySelector('input[name="q6"]:checked').value),
+  };
 
-    let total = 0;
+  const firstFiveTotal =
+    scores.q1 + scores.q2 + scores.q3 + scores.q4 + scores.q5;
 
-    // 前五題加總
-    for (let i = 1; i <= 5; i++) {
-      const val = document.querySelector(`input[name="q${i}"]:checked`);
-      if (!val) {
-        alert("請完成所有題目後再提交");
-        return;
-      }
-      total += parseInt(val.value, 10);
-    }
+  // 👉 把 6 題分數全部塞進網址
+  const params = new URLSearchParams(scores).toString();
 
-    // 第六題
-    const q6 = document.querySelector(`input[name="q6"]:checked`);
-    if (!q6) {
-      alert("請完成所有題目後再提交");
-      return;
-    }
-    const q6Val = parseInt(q6.value, 10);
-
-    // 判斷跳頁條件
-    if (total >= 15 || q6Val >= 2) {
-      window.location.href = "result-clinic.html";
-    } else {
-      window.location.href = "result-counsel.html";
-    }
-  });
+  // ✅ 分流條件（照你說的）
+  if (firstFiveTotal > 15 || scores.q6 > 2) {
+    // 分數較高 → 門診頁
+    window.location.href = `result-clinic.html?${params}`;
+  } else {
+    // 分數較輕 → 諮商頁
+    window.location.href = `result-counsel.html?${params}`;
+  }
 });
