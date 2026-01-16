@@ -53,13 +53,13 @@ button {
   font-size: 16px;
   border: none;
   border-radius: 14px;
-  background-color: #2c5aa0;
+  background-color: #EFF6FF;
   color: #fff;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #1f4177;
+  background-color: #EFF6FF;
 }
 
 /* 結果頁共用 */
@@ -91,3 +91,4 @@ button:hover {
 .result-box a.secondary {
   background-color: #5a9bd4;
 }
+
