@@ -25,51 +25,10 @@
     </a>
 
     <a class="secondary"
-<script>
-  document.getElementById("goCounselingBtn").addEventListener("click", function () {
-    const s = window.assessmentScores;
-
-    const googleFormBase =
-      "https://docs.google.com/forms/d/e/https://forms.gle/Jzw8GwKczVtT1sTY7";
-
-    const params = new URLSearchParams({
-      "entry.657024921": s.q1,
-      "entry.1174511463": s.q2,
-      "entry.1240718266": s.q3,
-      "entry.760944801": s.q4,
-      "entry.413009570": s.q5,
-      "entry.307079718": s.q6,
-    });
-
-    window.location.href = `${googleFormBase}&${params.toString()}`;
-  });
+       href="https://forms.gle/Jzw8GwKczVtT1sTY7"
+       target="_blank">
       直接諮商
-       </a>
-
+    </a>
   </div>
 </body>
 </html>
-
-<script>
-  const urlParams = new URLSearchParams(window.location.search);
-
-  const scores = {
-    q1: urlParams.get("q1"),
-    q2: urlParams.get("q2"),
-    q3: urlParams.get("q3"),
-    q4: urlParams.get("q4"),
-    q5: urlParams.get("q5"),
-    q6: urlParams.get("q6"),
-  };
-
-  window.assessmentScores = scores;
-</script>
-
-
-
-
-
-
-
-
-
