@@ -17,7 +17,7 @@ document.getElementById("assessmentForm").addEventListener("submit", function (e
   const params = new URLSearchParams(scores).toString();
 
   // ✅ 分流條件（照你說的）
-  if (firstFiveTotal > 15 || scores.q6 > 2) {
+  if (firstFiveTotal >= 15 || scores.q6 >= 2) {
     // 分數較高 → 門診頁
     window.location.href = `result-clinic.html?${params}`;
   } else {
@@ -25,3 +25,4 @@ document.getElementById("assessmentForm").addEventListener("submit", function (e
     window.location.href = `result-counsel.html?${params}`;
   }
 });
+
