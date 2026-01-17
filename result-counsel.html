@@ -8,28 +8,39 @@
 <body>
   <div class="container result-box">
     <h2>感謝您的填寫</h2>
+
     <p>
-      這是一個認識您自己狀態的開始。
+      這是一個認識您自己身心狀態的開始。
     </p>
 
     <p>
       最後再麻煩您協助填寫正式預約表單，<br />
-      完成後請告知我們，才能順利為您安排。
+      完成後我們才能順利為您安排。
     </p>
 
-    <a class="secondary"
-       href="https://forms.gle/Jzw8GwKczVtT1sTY7"
-       target="_blank">
+    <a href="#" class="secondary" id="goForm">
       前往諮商表單
     </a>
   </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+
+    const googleFormBase =
+      "https://docs.google.com/forms/d/e/1FAIpQLScgSyhjSoKqmg46mTpV1m1DeMv5MiGv5CAEJgJo7BQS2IKm0g/viewform?usp=pp_url";
+
+    document.getElementById("goForm").addEventListener("click", function () {
+      const formParams = new URLSearchParams({
+        "entry.657024921": params.get("q1"),
+        "entry.1174511463": params.get("q2"),
+        "entry.1240718266": params.get("q3"),
+        "entry.760944801": params.get("q4"),
+        "entry.413009570": params.get("q5"),
+        "entry.307079718": params.get("q6"),
+      });
+
+      window.location.href = `${googleFormBase}&${formParams.toString()}`;
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
