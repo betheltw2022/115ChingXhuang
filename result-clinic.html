@@ -8,27 +8,46 @@
 <body>
   <div class="container result-box">
     <h2>關心您的心理狀態</h2>
+
     <p>
       我們發現您心情溫度計分數較高，<br />
       想關心您最近的心情是否還好呢？
     </p>
+
     <p>
       若方便的話，誠摯邀請您來門診與醫師聊聊，<br />
-      可以更了解您的狀況並協助轉介給最適合您的心理師，<br />
-      如果有需要也可以協助開立藥物。(不強制喔~)<br />
-      如果希望直接安排諮商，再麻煩您協助填寫正式預約表單，完成後請告知我們，才能順利為您安排喔~
+      或是您也可以選擇直接安排心理諮商。
     </p>
 
-
+    <!-- 先門診：只去 LINE，不進表單 -->
     <a href="https://line.me/R/ti/p/@718plgpz" target="_blank">
       先門診諮詢
     </a>
 
-    <a class="secondary"
-       href="https://forms.gle/Jzw8GwKczVtT1sTY7"
-       target="_blank">
+    <!-- 直接諮商：帶 6 題分數進 Google 表單 -->
+    <a href="#" class="secondary" id="goCounsel">
       直接諮商
     </a>
   </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+
+    const googleFormBase =
+      "https://docs.google.com/forms/d/e/1FAIpQLScgSyhjSoKqmg46mTpV1m1DeMv5MiGv5CAEJgJo7BQS2IKm0g/viewform?usp=pp_url";
+
+    document.getElementById("goCounsel").addEventListener("click", function () {
+      const formParams = new URLSearchParams({
+        "entry.657024921": params.get("q1"),
+        "entry.1174511463": params.get("q2"),
+        "entry.1240718266": params.get("q3"),
+        "entry.760944801": params.get("q4"),
+        "entry.413009570": params.get("q5"),
+        "entry.307079718": params.get("q6"),
+      });
+
+      window.location.href = `${googleFormBase}&${formParams.toString()}`;
+    });
+  </script>
 </body>
 </html>
